@@ -1,0 +1,20 @@
+.input-group {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: $m-size;
+
+    //min-width = 최소 ~ 이상이면 실행 
+    //max-width = 최대 ~ 이하이면 실행
+    @media (min-width: $desktop-breakpoint) {
+        flex-direction: row;
+        margin-bottom: $l-size; 
+    }
+}
+
+.input-group__item {
+    margin-bottom: $s-size;
+
+    @media (min-width: $desktop-breakpoint) {
+        margin: 0 $s-size 0 0;
+    }
+}
